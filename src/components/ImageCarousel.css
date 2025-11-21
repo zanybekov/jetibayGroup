@@ -1,0 +1,99 @@
+.image-carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 700px;
+  height: 500px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: #3498db;
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .image-carousel {
+    margin: 20px auto 0;
+    border-radius: 8px;
+  }
+
+  .carousel-container {
+    height: 200px;
+  }
+
+  .carousel-indicators {
+    margin-top: 10px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 150px;
+  }
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] .indicator {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] .indicator.active {
+  background: #3498db;
+}
+
+[data-theme="dark"] .indicator:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,639 @@
+.about {
+  padding: 0;
+  background: white;
+}
+
+/* Stats Section */
+.about-stats-section {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3498db;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Company Story */
+.company-story {
+  padding: 100px 0;
+  background: white;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.story-text .section-heading {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.story-text .section-heading::after {
+  left: 0;
+  transform: none;
+}
+
+.story-timeline {
+  position: relative;
+}
+
+.story-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  background: #3498db;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.timeline-year {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: #3498db;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.story-image {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Services Section */
+.about-services {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.about-services .section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.service-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Values Section */
+.about-values {
+  padding: 100px 0;
+  background: white;
+}
+
+.about-values .section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.value-item {
+  text-align: center;
+  padding: 40px 30px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-icon svg {
+  width: 35px;
+  height: 35px;
+}
+
+.value-item h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.value-item p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Achievements Section */
+.about-achievements {
+  padding:100px 0;
+  background: #f8f9fa;
+}
+
+.about-achievements .section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.achievement-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  color: #f39c12;
+  background: rgba(243, 156, 18, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-icon svg {
+  width: 35px;
+  height: 35px;
+}
+
+.achievement-title {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.achievement-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Team Section */
+.about-team {
+  padding: 100px 0;
+  background: white;
+}
+
+.about-team .section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin: 0 auto 60px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.team-member {
+  background: #f8f9fa;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+  height: 250px;
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-photo img {
+  transform: scale(1.1);
+}
+
+.member-info {
+  padding: 30px;
+  text-align: center;
+}
+
+.member-name {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.member-position {
+  color: #3498db;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.member-experience {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  border-radius: 2px;
+}
+
+/* Animations */
+.about-stats-section, .company-story, .about-services, .about-values, .about-achievements, .about-team {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-stats-section { animation-delay: 0.1s; }
+.company-story { animation-delay: 0.2s; }
+.about-services { animation-delay: 0.3s; }
+.about-values { animation-delay: 0.4s; }
+.about-achievements { animation-delay: 0.5s; }
+.about-team { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-stats-section {
+    padding: 40px 0;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-card {
+    padding: 20px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .company-story {
+    padding: 60px 0;
+  }
+  
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 15px;
+  }
+  
+  .story-timeline::before {
+    left: 8px;
+  }
+  
+  .timeline-item {
+    padding-left: 30px;
+  }
+  
+  .timeline-year {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .about-services, .about-values, .about-achievements, .about-team {
+    padding: 60px 0;
+  }
+  
+  .section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .services-grid, .values-grid, .achievements-grid, .team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  .service-card, .value-item, .achievement-card {
+    padding: 30px 20px;
+  }
+  
+  .team-intro {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .section-heading {
+    font-size: 1.6rem;
+  }
+  
+  .value-icon, .achievement-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .value-icon svg, .achievement-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .member-info {
+    padding: 20px;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .story-content {
+    padding: 0 30px;
+  }
+  
+  .services-grid, .values-grid, .achievements-grid, .team-grid {
+    padding: 0 30px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] .about {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .about-stats-section {
+  background: var(--bg-primary);
+}
+
+[data-theme="dark"] .stat-card {
+  background: var(--bg-primary);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .stat-number {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .company-story,
+[data-theme="dark"] .about-values,
+[data-theme="dark"] .about-team {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .story-content,
+[data-theme="dark"] .value-item,
+[data-theme="dark"] .team-member {
+  background: var(--bg-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .about-services,
+[data-theme="dark"] .about-achievements {
+  background: var(--bg-primary);
+}
+
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .achievement-card {
+  background: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .section-heading,
+[data-theme="dark"] .timeline-content h3,
+[data-theme="dark"] .member-name,
+[data-theme="dark"] .service-title,
+[data-theme="dark"] .value-item h3,
+[data-theme="dark"] .achievement-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .timeline-content p,
+[data-theme="dark"] .member-position,
+[data-theme="dark"] .member-experience,
+[data-theme="dark"] .service-description,
+[data-theme="dark"] .value-item p,
+[data-theme="dark"] .achievement-description,
+[data-theme="dark"] .team-intro {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .section-heading::after {
+  background: var(--gradient-blue);
+}
+
+[data-theme="dark"] .story-timeline::before {
+  background: var(--primary-blue);
+}
+
+[data-theme="dark"] .timeline-year {
+  background: var(--primary-blue);
+}
